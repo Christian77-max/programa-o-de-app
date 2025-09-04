@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center-content {
+  background: #996161;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+h1 {
+  color: #3a7bd5;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  font-size: 1.1rem;
+}
