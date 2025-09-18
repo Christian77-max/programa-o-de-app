@@ -1,20 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Infocliente from './assets/components/infoCreate'
-import logo from './assets/images/logo.png'
+import { Routes, Route} from 'react-router-dom'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Home from './pages/Home'
+import SobreNos from './pages/SobreNos'
+import Serviços from './pages/Serviços'
+import './App.css' 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <img src={logo} alt="Logo" className='cliente-logo' />
-    <Infocliente />
-      
+       <div className="App">
+        <Header/>
+        <main className='container'>
+          <Routes>
+            <Route path='/' element={<h1>Home</h1>}/>
+            <Route path='/Serviços' element={<h1>Serviços</h1>}/>
+            <Route path='/Sobre-nos' element={<h1>SobreNos</h1>}/>
+            <Route path='/Fale-conosco' element={<h1>FaleConosco</h1>}/>
+          </Routes>
+        </main>
+        </div>
+
     </>
   )
 }
 
 export default App
+
+      
+
+
+
+
