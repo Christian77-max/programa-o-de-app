@@ -1,0 +1,65 @@
+/* style.css - Página Sobre Nós */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.sobre-nos-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px;
+}
+
+.sobre-nos-titulo {
+    font-size: 2.2rem;
+    color: #2d3748;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.sobre-nos-texto {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.sobre-nos-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.sobre-nos-membro {
+    background: #f0f4f8;
+    border-radius: 8px;
+    padding: 16px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.sobre-nos-membro img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.sobre-nos-membro-nome {
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 4px;
+}
+
+.sobre-nos-membro-cargo {
+    font-size: 0.95rem;
+    color: #555;
+}

@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src\App.css */
+
+/* Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  color: #333;
+}
+
+/* Container principal */
+.fale-conosco-container {
+  background: #ffffff;
+  max-width: 520px;
+  width: 100%;
+  padding: 36px 28px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Título */
+.fale-conosco-container h2 {
   text-align: center;
+  font-size: 2.2rem;
+  color: #0077cc;
+  margin-bottom: 32px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Formulário */
+.fale-conosco-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-@keyframes logo-spin {
+/* Labels */
+.fale-conosco-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Inputs e Textareas */
+.fale-conosco-form input,
+.fale-conosco-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.fale-conosco-form input:focus,
+.fale-conosco-form textarea:focus {
+  border-color: #0077cc;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+  outline: none;
+}
+
+/* Botão */
+.fale-conosco-form button {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.fale-conosco-form button:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .fale-conosco-container {
+    padding: 28px 20px;
+  }
+
+  .fale-conosco-container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Animação suave na entrada */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

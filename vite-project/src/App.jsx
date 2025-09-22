@@ -1,34 +1,32 @@
-import { Routes, Route} from 'react-router-dom'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import {Routes, Route } from 'react-router-dom'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from './pages/Home'
+import Servicos from './pages/Servicos'
 import SobreNos from './pages/SobreNos'
-import Serviços from './pages/Serviços'
-import './App.css' 
+import FaleConosco from './pages/FaleConosco'
+import './App.css'
+
 
 function App() {
   return (
     <>
-       <div className="App">
-        <Header/>
-        <main className='container'>
-          <Routes>
-            <Route path='/' element={<h1>Home</h1>}/>
-            <Route path='/Serviços' element={<h1>Serviços</h1>}/>
-            <Route path='/Sobre-nos' element={<h1>SobreNos</h1>}/>
-            <Route path='/Fale-conosco' element={<h1>FaleConosco</h1>}/>
-          </Routes>
-        </main>
-        </div>
+    <div className='app'>
+      <Header/>
+      <main className='container'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/servicos' element={<Servicos/>}/>
+          <Route path='/sobre-nos' element={<SobreNos/>}/>
+          <Route path='fale-conosco' element={<FaleConosco/>}/>
 
+        </Routes>
+      </main>
+      <Footer/>
+    </div>
     </>
   )
 }
 
 export default App
-
-      
-
-
-
 
